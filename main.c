@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 
 /**
@@ -10,13 +11,13 @@
  */
 int main(void)/*(int argc __attribute__((unused)), char **argv __attribute__((unused)))*/
 {
-	char *line;
+	char *line, *prompt = ">> ";
 	char **tokens;
 
 	for (;;)
 	{
 		/*handling the EOF signal here*/
-		printf(">> ");
+		write(STDOUT_FILENO, prompt, 3);
 		line = read_input();
 		tokens = split_input(line);
 		if (tokens[0] != NULL)
