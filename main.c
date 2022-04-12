@@ -11,13 +11,13 @@
  */
 int main(void)/*(int argc __attribute__((unused)), char **argv __attribute__((unused)))*/
 {
-	char *line, *prompt = ">> ";
+	char *line, *prompt = "our_sh >> ";
 	char **tokens;
 
 	for (;;)
 	{
 		/*handling the EOF signal here*/
-		write(STDOUT_FILENO, prompt, 3);
+		write(STDOUT_FILENO, prompt, 10);
 		line = read_input();
 		tokens = split_input(line);
 		if (tokens[0] != NULL)
