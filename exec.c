@@ -24,7 +24,7 @@ void execute_command(char **tokens)
 	}
 	else if (childpid == 0)
 	{
-		if (execve(tokens[0], tokens, NULL) == -1)
+		if (execve(tokens[0], tokens, environ) == -1)
 		{
 			perror("Error");
 		}
