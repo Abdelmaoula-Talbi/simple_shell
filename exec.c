@@ -27,17 +27,12 @@ void execute_command(char **tokens)
 		if (execve(tokens[0], tokens, NULL) == -1)
 		{
 			perror("Error");
-			exit(1);
 		}
-		else
-		{
-			execve(tokens[0], tokens, NULL);
-		}
+		exit(1);
+		
 	}
 	else
 	{
-		do {
-		waitpid(childpid, &status, WUNTRACED);
-		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
+		wait(&status);
 	}
 }

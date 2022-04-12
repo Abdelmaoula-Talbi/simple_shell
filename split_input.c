@@ -1,6 +1,7 @@
 #include "main.h"
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * split_input - split input into multiple arguments.
