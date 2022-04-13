@@ -4,7 +4,7 @@
 char *read_input(void);
 char **split_input(char *input);
 void execute_command(char **tokens);
-char* find_path(void);
+char *find_path(void);
 
 
 
