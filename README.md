@@ -30,3 +30,8 @@ cisfun$ /bin/ls
 barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
 ```
+# This project Contributors 
+
+<Abdelmaoula Talbi>
+<Mohamed Ahmed Zghal>
+<Youssef Sahbani>
