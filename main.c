@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	char *line, *prompt = "our_sh >> ";
+	char *line, *prompt = "cisfun $ ";
 	char **tokens;
 
 	for (;;)
