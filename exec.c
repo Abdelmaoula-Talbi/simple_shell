@@ -11,11 +11,10 @@
  * @tokens: list of arguments passed to the program.
  * Return: Nothing.
  */
-extern char **environ;
 
 void execute_command(char **tokens)
 {
-	
+
 	pid_t childpid;
 	int status;
 
@@ -32,7 +31,6 @@ void execute_command(char **tokens)
 			perror("Error");
 		}
 		exit(1);
-		
 	}
 	else
 	{
