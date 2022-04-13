@@ -32,6 +32,6 @@ env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat 
 ```
 # This project Contributors 
 
-<Abdelmaoula Talbi>
-<Mohamed Ahmed Zghal>
-<Youssef Sahbani>
+Abdelmaoula Talbi
+Mohamed Ahmed Zghal
+Youssef Sahbani
