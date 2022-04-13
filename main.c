@@ -9,7 +9,7 @@
  *
  * Return: Nothing.
  */
-int main(void)/*(int argc __attribute__((unused)), char **argv __attribute__((unused)))*/
+int main(void)
 {
 	char *line, *prompt = "our_sh >> ";
 	char **tokens;
@@ -24,9 +24,8 @@ int main(void)/*(int argc __attribute__((unused)), char **argv __attribute__((un
 		{
 			execute_command(tokens);
 		}
-		
-		free (line);
-		free (tokens);
+		free(line);
+		free(tokens);
 	}
 	return (0);
 }
