@@ -20,7 +20,7 @@ char **split_input(char *input)
 		token = strtok(NULL, " ");
 		index++;
 	}
-	tokens = malloc(sizeof(char*) * index);
+	tokens = malloc(sizeof(char *) * index);
 	tokens[index] = token;
 	return (tokens);
 }
